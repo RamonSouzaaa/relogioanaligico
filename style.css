@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.relogioAnalogico {
+    position: relative;
+    border:2px solid black;
+    width: 600px;
+    height: 600px;
+    border-radius:50%
+}
+
+.relogioAnalogico1 {
+    position: relative;
+    border:2px solid black;
+    width: 600px;
+    height: 600px;
+    border-radius:50%
+}
+
+.ponteirosMarcacao {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.ponteiroMinuto {
+    position: relative;
+    border:2px solid orange;
+    transform-origin: bottom;
+    height: 40%;
+    margin-top:10%;
+}
+
+.ponteiroSegundo {
+    position: relative;
+    border:2px solid blue;
+    transform-origin: bottom;
+    height: 40%;
+    margin-top:10%;
+}
+
+.ponteiroHora {
+    position: absolute;
+    border:2px solid green;
+    transform-origin: bottom;
+    height: 30%;
+    margin-top:20%;
+}
+
+.circuloPonteiro {
+    border:10px solid darkmagenta;
+    position: absolute;
+    align-self: center;
+    border-radius: 100%;
+}
+
+.relogioDigital {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2px;
+    
+}
+
+.relogioDigital > span {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+}
+
+.relogioDigital > span:nth-child(1){
+    color:green;
+}
+
+.relogioDigital > span:nth-child(2n + 2){
+    width: 3px;
+}
+
+.relogioDigital > span:nth-child(3){
+    color:orange;
+}
+
+.relogioDigital > span:nth-child(5){
+    color:blue;
+}
+
+.pipe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.9em;
+}
